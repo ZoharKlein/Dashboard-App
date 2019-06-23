@@ -1,0 +1,511 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Anton', sans-serif;
+}
+
+
+/*----------------------------------- Login -----------------------------------*/
+
+#login {
+    /*visibility: visible;
+*/
+    color: #888888;
+    left: 0;
+    font-size: 140%;
+    border: 3px solid #e6e6e6;
+    position: fixed;
+    border-radius: 13px;
+    background-color: #dadddf;
+    /* Set this to your convenience */
+    /* Set this to your convenience */
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-top: -100px;
+    /* Half of height */
+    margin-left: -150px;
+}
+
+.login-container {
+    position: relative;
+    text-align: center;
+    height: 300px;
+    width: 300px;
+    padding: 50px;
+    margin: 0 auto 0 auto;
+}
+
+.login-container input {
+    margin: 10px 0;
+}
+
+.login-container h3 {
+    margin: 10px;
+}
+
+.loader {
+    z-index: 1;
+    visibility: hidden;
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #888888;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    position: absolute;
+    top: 40%;
+    left: 55%;
+    margin-top: -100px;
+    margin-left: -150px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/*----------------------------------- app -----------------------------------*/
+
+.app {
+    visibility: hidden;
+}
+
+.app-right-screen {
+    position: fixed;
+    left: 210px;
+    padding: auto;
+    width: 89%;
+}
+
+.app-right-screen h1 {
+    text-align: center;
+    font-size: 400%;
+    margin-bottom: 3%;
+    color: #888888;
+}
+
+
+/*----------------------------------- Sidebar -----------------------------------*/
+
+#sidebar {
+    position: fixed;
+    width: 210px;
+    height: 100%;
+    background: #151719;
+    opacity: 0.7;
+}
+
+.sidebar-list {
+    margin-top: 100px;
+}
+
+#sidebar img {
+    border-radius: 80%;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    position: relative;
+    left: 40px;
+    margin-top: 40px;
+}
+
+#sidebar button {
+    position: relative;
+    left: 20px;
+    bottom: 40px;
+}
+
+.menu-title {
+    font-size: 180%;
+    position: relative;
+    left: 20px;
+    width: 10%;
+}
+
+.sidebar-list li {
+    font-size: 140%;
+    color: white;
+    list-style: none;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-top: 20px;
+    border-bottom: 1px solid #dadddf;
+}
+
+.sidebar-list li:hover {
+    font-size: 150%;
+    color: wheat;
+}
+
+#sidebar h2 {
+    color: wheat;
+    position: relative;
+    left: 20px;
+    width: 100%;
+}
+
+
+/*----------------------------------- Student Info -----------------------------------*/
+
+.student-info {
+    font-size: 140%;
+    border: 3px solid #e6e6e6;
+    position: relative;
+    border-radius: 13px;
+    background-color: #dadddf;
+    text-align: center;
+    width: 40%;
+    height: 400px;
+    margin: 0 auto 0 auto;
+}
+
+.student-info table {
+    text-align: center;
+    padding: 100px 0;
+    margin: 0 auto 0 auto;
+    width: 60%;
+    height: 100%;
+}
+
+.input-data-student {
+    border: 3px solid #e6e6e6;
+    background-color: #dadddf;
+    margin-top: 10px;
+}
+
+.student-info button {
+    top: 50px;
+    background-color: #888888;
+    height: 50px;
+    width: 150px;
+    position: relative;
+}
+
+
+/*----------------------------------- Courses List -----------------------------------*/
+
+.courses-page-box {
+    position: relative;
+    top: 100px;
+    width: 80%;
+    display: flex;
+    left: 10%;
+}
+
+.courses-page-box div {
+    border: 3px solid #e6e6e6;
+    border-radius: 13px;
+    background-color: #dadddf;
+    height: 300px;
+    width: 400px;
+    margin: 10px;
+    /**/
+}
+
+.courses-page-box h3 {
+    text-align: center;
+}
+
+.courses-page-box .allcurses {
+    order: 1;
+}
+
+.course-btn-box {
+    position: relative;
+    height: 70%;
+    width: 80%;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto 0 auto;
+}
+
+.course-btn-box ol {
+    padding: 5px;
+    width: 70%;
+    margin: 0 auto 0 auto;
+}
+
+.course-btn-box ol button {
+    width: 100%;
+}
+
+.course-btn-box label:hover {
+    color: #000;
+}
+
+.prev-page {
+    float: left;
+}
+
+.next-page {
+    float: right;
+}
+
+.courses-page-box table {
+    height: 80%;
+    width: 90%;
+    margin: 0 auto 0 auto;
+}
+
+.courses-page-box .courses-deatials {
+    order: 2;
+}
+
+.courses-page-box .courses-personal-details {
+    order: 3;
+}
+
+#canvas-garpah {
+    height: 300px;
+    width: 300px;
+}
+
+.btn-chart-box button {
+    position: relative;
+    left: 40%;
+}
+
+.pop-up-graph {
+    height: 40%;
+    width: 80%;
+    position: absolute;
+    margin: 0 auto;
+    border: 3px solid #e6e6e6;
+    position: relative;
+    border-radius: 13px;
+    background-color: #dadddf;
+}
+
+.pop-up-graph canvas {
+    width: 100%;
+    height: 100%;
+}
+
+.pop-up-graph button {
+    float: right;
+    width: 30px;
+}
+
+
+/*-----------------------------------  Calendar Courses List -----------------------------------*/
+
+.calendar {
+    font-size: 140%;
+    border: 3px solid #e6e6e6;
+    position: relative;
+    border-radius: 13px;
+    background-color: #dadddf;
+    text-align: center;
+    width: 30%;
+    float: right;
+    right: 5%;
+}
+
+.mounth {
+    background-color: #888888;
+    color: white;
+    position: relative;
+}
+
+.calendar table {
+    margin: 0 auto 0 auto;
+    position: relative;
+    padding: 10px;
+    width: 100%;
+}
+
+.calendar table td {
+    margin: 0 auto 0 auto;
+    position: relative;
+    border: 1px solid #888888;
+    padding: 5px;
+    border-radius: 10%;
+    height: 30px;
+    width: 40px;
+}
+
+.calendar table .days td:hover {
+    background: wheat;
+}
+
+.lesson-info {
+    font-size: 140%;
+    border: 3px solid #e6e6e6;
+    position: relative;
+    border-radius: 13px;
+    background-color: #dadddf;
+    text-align: center;
+    width: 40%;
+    height: 400px;
+    left: 15%;
+}
+
+.lesson-info table {
+    text-align: center;
+    margin: 0 auto;
+    bottom: 100px;
+    padding: 100px
+}
+
+.lesson-info table tr td {
+    padding: 10px;
+    font-size: 1.5rem
+}
+
+
+/*----------------------------------- ContactUs -----------------------------------*/
+
+.ContactUs {
+    font-family: 'Anton', sans-serif;
+    margin-top: 50px;
+}
+
+.label-input {
+    color: #888888;
+    left: 0;
+}
+
+.ContcatUsItem-Body {
+    font-size: 140%;
+    border: 3px solid #e6e6e6;
+    position: relative;
+    border-radius: 13px;
+    padding: 30px 60px 30px 22px;
+    margin: 0;
+    margin-bottom: 30px;
+    background-color: #dadddf;
+    left: 10%;
+}
+
+.ContcatUsItem-Body-fullname {
+    left: 10%;
+    width: 80%;
+    border-radius: 13px;
+}
+
+.ContcatUsItem-Body-Email {
+    left: 10%;
+    width: 38%;
+}
+
+.ContcatUsItem-Body-Phone {
+    left: 52%;
+    width: 38%;
+    bottom: 147px;
+}
+
+.input-contactUs {
+    border-radius: 10%;
+    border: 0;
+    opacity: 0.5;
+    margin-top: 1%;
+    color: #000;
+}
+
+.ContcatUsItem-Body-Message {
+    font-size: 140%;
+    border: 3px solid #e6e6e6;
+    position: relative;
+    border-radius: 13px;
+    background-color: #dadddf;
+    text-align: center;
+    left: 30%;
+    width: 38%;
+    bottom: 150px;
+    padding: 20px 10px 10px 22px;
+}
+
+.text-message {
+    height: 150%;
+    width: 90%;
+    font-size: 60%;
+}
+
+.btn-submit-form {
+    background-color: #888888;
+    text-align: center;
+    position: relative;
+    width: 30%;
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
+
+
+/*----------------------------------- Phone Size -----------------------------------*/
+
+@media (max-width: 1300px) {
+    .data-on-screen {
+        width: 99%;
+    }
+    #sidebar {
+        left: -255px;
+        transition: all 300ms linear;
+        z-index: 1;
+        position: absolute;
+        height: 200%;
+    }
+    .toggle-btn {
+        position: absolute;
+        left: 260px;
+        top: 20px;
+    }
+    .toggle-btn span {
+        display: block;
+        width: 20px;
+        height: 10px;
+        background: black;
+        margin: 5px 0px;
+    }
+    .app-right-screen {
+        left: 0;
+        padding: auto;
+        width: 100%;
+        position: relative;
+        z-index: 0;
+    }
+    .data-on-screen .student-info {
+        width: 90%;
+    }
+    .calendar {
+        float: none;
+        margin: 0 auto;
+        width: 60%;
+    }
+    .lesson-info {
+        width: 60%;
+        height: 250px;
+        margin: 0;
+        margin-top: 1%;
+        padding: 0;
+    }
+    .lesson-info table {
+        text-align: center;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .lesson-info table tr td {
+        margin: 0 auto;
+        padding: 0;
+        font-size: 1.5rem
+    }
+    /**/
+    .courses-page-box {
+        top: 10px;
+        width: 80%;
+        display: flex;
+        left: 10%;
+        flex-direction: column;
+    }
+    .courses-page-box div {
+        height: 300px;
+        width: 80%;
+        display: flex;
+        /**/
+    }
+}
